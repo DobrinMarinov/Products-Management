@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acme Product Management</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!--Library Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/angular-mocks.js"></script>
+
+    <!--Application Scripts-->
+    <script src="app/app.js"></script>
+
+    <!--Services-->
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/productResource.js"></script>
+    <script src="common/services/productResourseMock.js"></script>
+
+    <!--Product Controllers-->
+    <script src="app/products/productListCtrl.js"></script>
+
+</head>
+<body ng-app="productManagement">
+
+<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size: large">Product List</div>
+
+    <table class="table" ng-controller="ProductListCtrl as vm">
+        <thead>
+            <tr>
+                <td><button class="btn btn-primary" type="button"
+                            ng-click="vm.toggleImage()">{{vm.showImage ? 'Hide' : 'Show'}} Image</button></td>
+                <td>Product</td>
+                <td>Code</td>
+                <td>Available</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in vm.products">
+                <td><img ng-show="vm.showImage" ng-src="{{product.imageURL}}" title="{{product.productName}}" style="height: 50px"></td>
+                <td>{{ product.productName }}</td>
+                <td>{{ product.productCode }}</td>
+                <td>{{ product.releaseDate }}</td>
+                <td>{{ product.price | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+</body>
+</html>
