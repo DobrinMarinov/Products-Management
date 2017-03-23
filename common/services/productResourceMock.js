@@ -8,40 +8,40 @@
         var products = [
             {   "productId": 1,
                 "productName": "Leaf Rake",
-                "productCode": "CDN-111",
+                "productCode": "CDN-1121",
                 "releaseDate": "March 19, 2015",
                 "price": 25.95,
                 "imageURL": "https://openclipart.org/image/300px/svg_to_png/26215/Leaf-Rake.png",
                 "description": "cleans well",
-                "availability": "March, 2013",
+                "availability": " March 10, 2013",
                 "cost": 16.34,
                 "margin": "39%",
-                "tags": "cart, barrow"
+                "tags": ["cart", "barrow"]
             },
             {   "productId": 10,
                 "productName": "Hammer",
-                "productCode": "CTF-158",
+                "productCode": "CTF-1598",
                 "releaseDate": "April 22, 2014",
                 "price": 32.45,
                 "imageURL": "https://openclipart.org/image/300px/svg_to_png/73/rejon-Hammer.png",
                 "description": "hammers well",
-                "availability": "May, 2011",
+                "availability": "May 10, 2011",
                 "cost": 23.82,
                 "margin": "43%",
-                "tags": "some tag"
+                "tags": ["some", "tag"]
             },
             {
                 "productId": 20,
                 "productName": "Guitar",
-                "productCode": "CMG-384",
+                "productCode": "CMG-3184",
                 "releaseDate": "October 28, 2012",
                 "price": 165.48,
                 "imageURL": "https://openclipart.org/image/300px/svg_to_png/270/TheresaKnott-electric-guitar.png",
                 "description": "sounds good",
-                "availability": "October, 2010",
+                "availability": "October 10, 2010",
                 "cost": 132.47,
                 "margin": "20%",
-                "tags": "guitars, music"
+                "tags": ["guitars", "music"]
             }
         ];
 
