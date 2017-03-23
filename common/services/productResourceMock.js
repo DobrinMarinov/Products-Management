@@ -6,27 +6,42 @@
 
     app.run(function ($httpBackend) {
         var products = [
-            {   "product": 1,
+            {   "productId": 1,
                 "productName": "Leaf Rake",
                 "productCode": "CDN-111",
                 "releaseDate": "March 19, 2015",
                 "price": 25.95,
-                "imageURL": "https://openclipart.org/image/300px/svg_to_png/26215/Leaf-Rake.png"
+                "imageURL": "https://openclipart.org/image/300px/svg_to_png/26215/Leaf-Rake.png",
+                "description": "cleans well",
+                "availability": "March, 2013",
+                "cost": 16.34,
+                "margin": "39%",
+                "tags": "cart, barrow"
             },
-            {   "product": 10,
+            {   "productId": 10,
                 "productName": "Hammer",
                 "productCode": "CTF-158",
                 "releaseDate": "April 22, 2014",
                 "price": 32.45,
-                "imageURL": "https://openclipart.org/image/300px/svg_to_png/73/rejon-Hammer.png"
+                "imageURL": "https://openclipart.org/image/300px/svg_to_png/73/rejon-Hammer.png",
+                "description": "hammers well",
+                "availability": "May, 2011",
+                "cost": 23.82,
+                "margin": "43%",
+                "tags": "some tag"
             },
             {
-                "product": 20,
+                "productId": 20,
                 "productName": "Guitar",
                 "productCode": "CMG-384",
                 "releaseDate": "October 28, 2012",
                 "price": 165.48,
-                "imageURL": "https://openclipart.org/image/300px/svg_to_png/270/TheresaKnott-electric-guitar.png"
+                "imageURL": "https://openclipart.org/image/300px/svg_to_png/270/TheresaKnott-electric-guitar.png",
+                "description": "sounds good",
+                "availability": "October, 2010",
+                "cost": 132.47,
+                "margin": "20%",
+                "tags": "guitars, music"
             }
         ];
 

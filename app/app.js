@@ -16,8 +16,6 @@
                             templateUrl: "app/welcomeView.html"
                         })
 
-                    $stateProvider
-                        // Products
                         .state("productList", {
                             url: "/products",
                             templateUrl: "app/products/productListView.html",
@@ -28,6 +26,12 @@
                             url: "/products/edit/:productId",
                             templateUrl: "app/products/productEditView.html",
                             controller: "ProductEditCtrl as vm"
+                        })
+
+                        .state("productDetail", {
+                            url: "/products/:productId",
+                            templateUrl: "app/products/productDetailView.html",
+                            controller: "ProductDetailCtrl as vm"
                         })
 
                 }]

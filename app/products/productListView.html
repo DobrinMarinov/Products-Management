@@ -15,10 +15,19 @@
         <tbody>
         <tr ng-repeat="product in vm.products">
             <td><img ng-show="vm.showImage" ng-src="{{product.imageURL}}" title="{{product.productName}}" style="height: 50px"></td>
-            <td>{{ product.productName }}</td>
+            <td>
+                <a ui-sref="productDetail({productId: product.productId})">
+                    {{ product.productName }}</a>
+            </td>
             <td>{{ product.productCode }}</td>
             <td>{{ product.releaseDate }}</td>
             <td>{{ product.price | currency }}</td>
+            <td>
+                <a class="btn btn-primary"
+                   ui-sref="productEdit({productId: product.productId})">
+                    Edit
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
