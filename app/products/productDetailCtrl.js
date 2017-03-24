@@ -11,7 +11,7 @@
 
         vm.product = product;
 
-        //     {
+                //     {
         //     "productId": 10,
         //     "productName": "Hammer",
         //     "productCode": "CTF-158",
@@ -26,6 +26,8 @@
         // };
 
 
+        // vm.marginPercent =
+        //     productService.calculateMarginPercent(vm.product.price, vm.product.cost);
 
         vm.title = "Product Detail: " + vm.product.productName;
 
