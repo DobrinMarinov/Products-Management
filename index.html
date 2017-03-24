@@ -19,6 +19,8 @@
     <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
     <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
     <script src="bower_components/toastr/toastr.js"></script>
+    <script src="js/angular-charts.js"></script>
+    <script src="js/d3.js"></script>
 
     <!--Application Scripts-->
     <script src="app/app.js"></script>
@@ -33,6 +35,9 @@
     <script src="app/products/productListCtrl.js"></script>
     <script src="app/products/productDetailCtrl.js"></script>
     <script src="app/products/productEditCtrl.js"></script>
+
+    <!--Product Controllers-->
+    <script src="app/prices/priceAnalyticsCtrl.js"></script>
 
 </head>
 <body ng-app="productManagement">
@@ -52,6 +57,7 @@
             <ul class="nav navbar-nav">
                 <li><a ui-sref="productList">Product List</a></li>
                 <li><a ui-sref="productEdit.info({productId:0})"><i class="glyphicon glyphicon-plus"></i>Add Product</a></li>
+                <li><a ui-sref="priceAnalytics">Price Analytics</a></li>
             </ul>
         </div>
     </div>

@@ -1,1 +1,29 @@
-<div>productEditPriceView</div>
+<form class="form-horizontal" name="productPriceForm" novalidate>
+    <fieldset>
+        <legend>Product Price Details</legend>
+
+        <div class="form-group" ng-class="{'has-error': productPriceForm.inputCost.$invalid &&
+                                                        productPriceForm.inputCost.$dirty}">
+            <label class="col-md-2 control-label" for="inputCost">Cost</label>
+            <div class="col-md-4">
+                <input class="form-control" id="inputCost" mame="inputCost", type="number" placeholder="Our Cost"
+                ng-model="vm.product.cost" style="text-align: right" />
+            </div>
+            <span class="help-block" ng-show="productPriceForm.inputCost.$invalid &&
+                                                        productPriceForm.inputCost.$dirty">
+                Product cost must be a valid number or empty
+            </span>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 0;">
+            <label class="col-md-2 control-label">Calculate Price</label>
+            <div class="col-md-4 btn-group">
+                <label class="btn btn-default" ng-model="vm.priceOption" uib-btn-radio="percent" style="width: 50%">Markup %</label>
+                <label class="btn btn-default" ng-model="vm.priceOption" uib-btn-radio="amount" style="width: 50%">Markup $</label>
+            </div>
+        </div>
+
+<!--TODO: other buttons and functionality-->
+
+    </fieldset>
+</form>
